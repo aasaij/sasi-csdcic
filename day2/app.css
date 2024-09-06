@@ -1,0 +1,48 @@
+/* Universal Selector or CSS Reset */
+* {
+  margin: 0px;
+}
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+iframe {
+  width: 100%;
+  color: white;
+}
+.container div {
+  width: 45%;
+}
+header {
+  width: 100%;
+  background-color: tomato;
+  color: white;
+  text-align: center;
+}
+footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+main {
+  background-color: blueviolet;
+  color: white;
+  font-size: 1.5em;
+  min-height: 89vh;
+}
+ul,
+li {
+  display: inline;
+}
+a {
+  color: rgba(0, 255, 0, 0.5);
+  text-decoration: none;
+  padding: 10px;
+}
+a:hover {
+  color: rgba(0, 255, 0, 1);
+  text-decoration: underline;
+  text-transform: uppercase;
+}
