@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interest Calculator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container text-white bg-primary">
+      <h1 class="text-center">Interest Calculator</h1>
+      <form action="">
+        <label for="principal" class="form-label">Principal Amount</label>
+        <input id="principal" type="number" class="form-control" />
+        <label for="rate" class="form-label">Rate of Interest</label>
+        <input id="rate" type="number" class="form-control" />
+        <label for="years" class="form-label">Number of years</label>
+        <input id="years" type="number" class="form-control" />
+        <fieldset>
+          <legend>Interest Type</legend>
+          <input id="simple" type="radio" name="itype" />
+          <label for="">Simple Interest</label>
+          <input id="compound" type="radio" name="itype" />
+          <label for="">Compound Interest</label>
+        </fieldset>
+        <label for="result" class="form-label">Interest</label>
+        <input id="result" type="number" class="form-control" readonly />
+
+        <button onclick="calculate()" class="btn btn-info m-3" type="button">
+          Calculate
+        </button>
+        <button class="btn btn-danger m-3" type="reset">Clear</button>
+      </form>
+    </div>
+    <script src="./index.js" />
+  </body>
+</html>
